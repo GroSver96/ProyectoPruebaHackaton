@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Enfermera</title>
+    <link rel="stylesheet" href="NurseRegistration.css"> <!-- Conexión al CSS -->
+</head>
+<body>
+
+<div class="nurse-registration">
+    <h2>Registro de Enfermera</h2>
+    <form id="nurse-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="department">Departamento:</label>
+        <select id="department" name="department" required>
+            <option value="emergencias">Emergencias</option>
+            <option value="cuidados-intensivos">Cuidados Intensivos</option>
+            <option value="pediatria">Pediatría</option>
+            <option value="quirurgico">Quirúrgico</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+    <p id="success-message" class="hidden">Enfermera registrada con éxito!</p>
+</div>
+
+<script src="NurseRegistration.js"></script> <!-- Conexión al TypeScript compilado -->
+</body>
+</html>
