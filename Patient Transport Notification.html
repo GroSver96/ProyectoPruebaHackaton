@@ -1,15 +1,37 @@
-<h1>Patient Transport Notification</h1>
-<h1>Notificacion de transporte de paciente</h1>
-<p>
-<label for="name">Estado Paciente:</label>
-<input type="text" id="name" name="name" required minlength="0" maxlength="100" size="1000" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificación de Transporte de Paciente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<label for="name">Equipo Necesario:</label>
-<input type="text" id="name" name="name" required minlength="0" maxlength="100" size="1000" />
+  <h1>Patient Transport Notification</h1>
+  <h2>Notificación de Transporte de Paciente</h2>
 
-<label for="name">Tipo de sangre:</label>
-<input type="text" id="name" name="name" required minlength="0" maxlength="100" size="1000" />
+  <form class="transport-form">
+    <div class="form-group">
+      <label for="estado">Estado Paciente:</label>
+      <input type="text" id="estado" name="estado" required maxlength="100" />
+    </div>
 
-<label for="name">Hora estimada de llegada y cualquier otra condición especial:</label>
-<input type="text" id="name" name="name" required minlength="0" maxlength="100" size="1000" />
-</p>
+    <div class="form-group">
+      <label for="equipo">Equipo Necesario:</label>
+      <input type="text" id="equipo" name="equipo" required maxlength="100" />
+    </div>
+
+    <div class="form-group">
+      <label for="sangre">Tipo de Sangre:</label>
+      <input type="text" id="sangre" name="sangre" required maxlength="100" />
+    </div>
+
+    <div class="form-group">
+      <label for="condiciones">Hora Estimada de Llegada y Condiciones Especiales:</label>
+      <input type="text" id="condiciones" name="condiciones" required maxlength="100" />
+    </div>
+  </form>
+
+</body>
+</html>
