@@ -8,7 +8,10 @@ import { DoctorRegistroComponent } from './component/doctor-registro/doctor-regi
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     DoctorRegistroComponent
+=======
+>>>>>>> 666c251614861e9f0431ae46f17eb5c074d8ef50
   ],
   imports: [
     BrowserModule,
